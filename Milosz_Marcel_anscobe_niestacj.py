@@ -29,7 +29,7 @@ def func_a() -> None:  # function should be lowercase PEP8 and type hints
     plt.savefig("output/plot.png")
 
 
-def save_csv():  # function should be lowercase PEP8 and type hints
+def save_csv() -> None:  # function should be lowercase PEP8 and type hints
     """Saving data to csv"""
 
     df = pd.DataFrame(
