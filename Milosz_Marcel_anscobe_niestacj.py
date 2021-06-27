@@ -13,7 +13,7 @@ df_dict = {"I": y1, "II": y2, "III": y3, "IV": y4}
 anscombe_df = pd.DataFrame(df_dict, index=x)
 
 
-def funcA():  # function should be lowercase PEP8 and type hints
+def func_a() -> None:  # function should be lowercase PEP8 and type hints
     """Returns 4 plots using anscobe_df"""
 
     scatter_plot_df = anscombe_df.reset_index()
@@ -29,7 +29,7 @@ def funcA():  # function should be lowercase PEP8 and type hints
     plt.savefig("output/plot.png")
 
 
-def saveCsv():  # function should be lowercase PEP8 and type hints
+def save_csv():  # function should be lowercase PEP8 and type hints
     """Saving data to csv"""
 
     df = pd.DataFrame(
@@ -40,5 +40,5 @@ def saveCsv():  # function should be lowercase PEP8 and type hints
 
 
 if __name__ == "__main__":
-    funcA()
-    saveCsv()
+    func_a()
+    save_csv()
